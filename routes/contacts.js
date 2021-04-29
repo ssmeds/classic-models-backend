@@ -8,7 +8,6 @@ router.use(cors());
 
 /* GET contacts listing. */
 router.get('/offices', function (req, res, next) {
-  let contacts = {};
   req.app.locals.con.connect((err) => {
     if (err) {
       console.log(err);
